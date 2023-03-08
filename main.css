@@ -1,0 +1,382 @@
+/* linking google font  */
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:opsz,wght@9..144,700;9..144,900&display=swap');
+
+/* universal stlyling */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    border: none;
+}
+
+/* variable declaring */
+:root {
+    --Soft-red: hsl(7, 99%, 70%);
+    --Yellow: hsl(51, 100%, 49%);
+    --Dark-desaturated-cyan-graphic-design-text: hsl(167, 40%, 24%);
+    --Dark-blue-photography-text: hsl(198, 62%, 26%);
+    --Dark-moderate-cyan-footer: hsl(168, 34%, 41%);
+
+
+    --Very-dark-desaturated-blue: hsl(212, 27%, 19%);
+    --Very-dark-grayish-blue: hsl(213, 9%, 39%);
+    --Dark-grayish-blue: hsl(232, 10%, 55%);
+    --Grayish-blue: hsl(210, 4%, 67%);
+    --White: hsl(0, 0%, 100%);
+    --barlow: 'Barlow', sans-serif;
+    --fraunces: 'Fraunces', serif;
+}
+
+body {
+    font-family: 'Barlow', sans-serif;
+    font-family: 'Fraunces', serif;
+    width: 100%;
+    font-size: 18px;
+}
+
+/* section one styling starts here */
+@media screen and (max-width:372px) {
+
+    .sec-one {
+        width: 100vw;
+
+        background-image: url(/images/mobile/image-header.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        height: 70vh;
+
+    }
+
+    .sec-one .header-menu {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px
+    }
+
+    .sec-one .header-menu>img {
+        width: 100px;
+    }
+
+    .sec-one .header-menu .menu-bar img {
+        width: 20px;
+    }
+
+    .sec-one .sec-1-para {
+        margin-top: 50px;
+    }
+
+    .sec-one .sec-1-para h2 {
+        color: var(--White);
+        font-size: 2rem;
+        text-align: center;
+        letter-spacing: 5px;
+
+    }
+
+    .sec-one .sec-1-para .arrow {
+        margin: 40px;
+        display: flex;
+        justify-content: center;
+    }
+
+    /* section one styling Ends here */
+
+    /* section two stying starts here */
+    .sec-two {
+        width: 100vw;
+
+    }
+
+    .sec-two .egg-img img {
+        width: 100%;
+    }
+
+    .sec-two .sec-2-para {
+        padding: 50px 20px;
+        text-align: center;
+    }
+
+    .sec-two .sec-2-para h3 {
+        font-size: 1.5rem;
+        font-weight: 900;
+        margin: 15px 0px 20px;
+        color: var(--Very-dark-desaturated-blue);
+    }
+
+    .sec-two .sec-2-para p {
+        font-size: 1rem;
+        font-family: 'Barlow', sans-serif;
+        color: var(--Very-dark-grayish-blue);
+        margin-bottom: 20px;
+
+    }
+
+    .sec-two .sec-2-para .btn {
+        font-family: var(--fraunces);
+        background-color: var(--White);
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+
+    .sec-two .sec-2-para .btn {
+        border-bottom: 3px solid var(--Yellow);
+    }
+
+    /* section two stying Ends here */
+
+
+    /* section 2 styling starts here */
+    .sec-three {
+        width: 100vw;
+
+    }
+
+    .sec-three .egg-img img {
+        width: 100%;
+    }
+
+    .sec-three .sec-3-para {
+        padding: 50px 20px;
+
+        text-align: center;
+    }
+
+    .sec-three .sec-3-para h3 {
+        font-size: 1.5rem;
+        font-weight: 900;
+        margin: 15px 0px 20px;
+        color: var(--Very-dark-desaturated-blue);
+    }
+
+    .sec-three .sec-3-para p {
+        font-size: 1rem;
+        font-family: 'Barlow', sans-serif;
+        color: var(--Very-dark-grayish-blue);
+        margin-bottom: 20px;
+
+    }
+
+    .sec-three .sec-3-para .btn {
+        font-family: var(--fraunces);
+        background-color: var(--White);
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+
+    .sec-three .sec-3-para .btn {
+        border-bottom: 3px solid var(--Soft-red);
+    }
+
+    /* section three styling ends here */
+
+    /* section four styling starts here */
+    .sec-four {
+        width: 100vw;
+        height: 500px;
+        background-image: url(/images/mobile/image-graphic-design.jpg);
+        background-size: cover;
+        display: flex;
+        align-items: end;
+    }
+
+    .sec-four .sec-4-para {
+        text-align: center;
+        margin-bottom: 30px;
+        padding: 0px 20px;
+
+    }
+
+    .sec-four .sec-4-para h2 {
+        font-size: 1.5rem;
+        font-weight: 900;
+        margin: 15px 0px 20px;
+        color: var(--Dark-desaturated-cyan-graphic-design-text);
+    }
+
+    .sec-four .sec-4-para p {
+        font-size: 14px;
+        font-family: 'Barlow', sans-serif;
+        color: var(--Dark-desaturated-cyan-graphic-design-text);
+        margin-bottom: 20px;
+
+    }
+
+    /* section four styling Ends here  */
+    /* section five styling starts here  */
+    .sec-five {
+        width: 100vw;
+        height: 500px;
+        background-image: url(/images/mobile/image-photography.jpg);
+        background-size: cover;
+        display: flex;
+        align-items: end;
+    }
+
+    .sec-five .sec-5-para {
+        text-align: center;
+        margin-bottom: 30px;
+        padding: 0px 20px;
+
+    }
+
+    .sec-five .sec-5-para h2 {
+        font-size: 1.5rem;
+        font-weight: 900;
+        margin: 15px 0px 20px;
+        color: var(--Dark-desaturated-cyan-graphic-design-text);
+    }
+
+    .sec-five .sec-5-para p {
+        font-size: 14px;
+        font-family: 'Barlow', sans-serif;
+        color: var(--Dark-desaturated-cyan-graphic-design-text);
+        margin-bottom: 20px;
+
+    }
+
+    /* section five styling Ends here  */
+
+    /* section six starts here */
+    .sec-six {
+        text-align: center;
+        padding: 50px 20px 20px;
+    }
+
+    .sec-six>h3{
+        text-transform: uppercase;
+        font-size: 16px;
+        font-weight: 900;
+        letter-spacing: 2px;
+        color: var(--Very-dark-grayish-blue);
+    }
+
+    .sec-six .person-de .img-person {
+        margin:50px 0px 30px;
+        display: flex;
+        justify-content: center;
+
+    }
+
+    .sec-six .person-de .img-person img {
+        width: 60px;
+        border-radius: 50%;
+    }
+
+    .sec-six .person-de .person-name {
+        text-align: center;
+    }
+
+    .sec-six .person-de p
+    {
+        font-family: var(--fraunces);
+        font-size: 15px;
+        line-height: 1.5rem;
+        color: var(--Very-dark-desaturated-blue);
+        margin-bottom: 30px;
+    }
+
+    .sec-six .person-de .person-name h3 {
+        font-size: 18px;
+        margin-bottom: 5px;
+    }
+
+    .sec-six .person-de .person-name p {
+        color: var(--Very-dark-grayish-blue);
+        font-size: 12px;
+        font-family: var(--fraunces);
+    }
+
+    /* section six Ends here */
+
+    /* section sevens styling starts here */
+    .pictures
+    {
+        width: 100vw;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .pictures img
+    {
+        width: 100%;
+    }
+    /* section sevens styling Ends here */
+
+    /* footer styling starts here */
+    footer{
+        background-color: var(--Dark-moderate-cyan-footer);
+        
+    }
+
+    footer .footer-logo 
+    {
+        padding: 40px 0px 25px;
+        display: flex;
+        justify-content: center;
+    }
+
+    footer .menus
+    {
+     display: flex;
+     align-items: center;
+     justify-content: space-around;
+    }
+    footer .menus a
+    {
+        color:var(--Dark-desaturated-cyan-graphic-design-text);
+        font-size: 15px;
+    }
+
+    footer .social-Platforms img
+    {
+        margin: 50px auto;
+        padding-right:20px ;
+    
+        
+    }
+    /* footer styling Ends here */
+    /* Mobile nav bar styling starts here */
+    .onclick-mobile
+    {
+        
+    }
+
+   .onclick-mobile
+{
+        position: absolute;
+        top: -300px;
+        right: 10%;
+        background-color:var(--White);
+        width: 70%;
+        padding: 20px 0px;
+        transition: .5s;
+    }
+
+   .onclick-mobile a,.onclick-mobile button{
+        display: block;
+        margin: 10px auto;
+    }
+
+   .onclick-mobile a
+    { margin-top: 20px;
+        text-align: center;
+    }
+
+   .onclick-mobile button {
+      margin-top: 20px ;
+      font-size: 18px;
+      font-family: var(--fraunces);
+      font-weight: 900;
+      padding: 10px 20px ;
+      border-radius: 20px;
+      background-color: var(--Yellow);
+    }
+    #back-arrow{
+        color: red;
+        transition: 1s;
+    }
+    /* Mobile nav bar styling Ends here */
+}
